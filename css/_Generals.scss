@@ -6,8 +6,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(40deg, $couleur-Palette1, $couleur-Palette11);
-    background: linear-gradient(10deg, $couleur-Palette8, $couleur-Palette6);
     margin: 0;}
 main {
     max-width: 90%;
@@ -54,6 +52,11 @@ section {
     100% {left: 0px; color: $couleur-Palette10;}}
 //-----------------------------------------------------------------//
 //-----------------------------------------------------------------//
+.degrader {
+    background: linear-gradient(40deg, $couleur-Palette1, $couleur-Palette11);
+    background: linear-gradient(80deg, $couleur-Palette8, $couleur-Palette6);}
+
+
 // .eco {
 //   animation: ecoMove 5s infinite;}
 // @keyframes ecoMove {

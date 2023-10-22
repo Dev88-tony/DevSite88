@@ -1,0 +1,37 @@
+//Script pour que lors du scroll de la page, 
+//la fleche de retour ne s'affiche pas
+//sur la bas de page la fleche ne s'affiche pas
+
+<div class="fleche">
+    <img width="50" src="imports/logos/icons8-vers-le-bas-100.png"
+        alt="image de fleur pour l'écoresponsabilité" />
+</div>
+
+<script type="text/javascript">
+    const fleche = document.querySelector(".fleche");
+
+    window.addEventListener("scroll", checkHeight);
+
+    function checkHeight() {
+        if (document.documentElement.scrollTop > 0) {
+            fleche.style.display = "none";
+        } else {
+            fleche.style.display = "block";
+        }
+    }
+</script>
+
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
+.fleche {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  animation: flecheMove 5s infinite;}
+@keyframes flecheMove {
+  from { opacity: 1; }
+  to { opacity: 0; }}
+
+//mettre ""scroll-behavior: smooth;"" dans html du css
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//

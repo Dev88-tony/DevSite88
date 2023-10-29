@@ -6,13 +6,13 @@
   font-family: "Signika";
   src: url("../fonts/Signika.woff") format("woff"), url("../fonts/Signika.woff2") format("woff2"), url("../fonts/Signika.ttf") format("truetype");
 }
-section, .flex-header {
+.flex-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section, main {
+main {
   margin-left: auto;
   margin-right: auto;
 }
@@ -31,15 +31,11 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
 main {
   max-width: 90%;
-  flex-grow: 1;
 }
 
 .btn {
@@ -47,7 +43,7 @@ main {
   background-color: #fcbd43;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  margin: 1rem;
+  margin-right: 2rem;
   font: 900 1.5rem sans-serif;
 }
 
@@ -57,46 +53,36 @@ main {
   padding: 2rem;
 }
 
-.section {
-  width: 50%;
-  margin-top: 25rem;
+nav {
+  width: 100%;
+  height: 7rem;
+  position: relative;
+  z-index: 1000;
+  position: fixed;
 }
 
-section {
-  justify-content: space-evenly;
-  font: 900 2rem sans-serif;
-  color: #ffffff;
+ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+li {
+  font-size: 2.2rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.BG-T {
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
 }
 
 .name {
-  margin-left: 5rem;
-  position: relative;
-  animation: nameMove 5s infinite linear;
-}
-
-@keyframes nameMove {
-  0% {
-    left: 0px;
-    color: #3300ff;
-  }
-  30% {
-    left: 50px;
-    color: #3300ff;
-  }
-  50% {
-    left: 50px;
-    color: #ffffff;
-  }
-  70% {
-    left: 50px;
-    color: #ffffff;
-  }
-  100% {
-    left: 0px;
-    color: #ff0000;
-  }
-}
-.degrader {
-  background: linear-gradient(40deg, #586071, #000000);
-  background: linear-gradient(80deg, #f27c00, #002f48);
+  color: #000000;
 }/*# sourceMappingURL=index.css.map */
